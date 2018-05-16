@@ -2,7 +2,7 @@ var approxim = 1;
 
 function calc() {
   var surd = parseFloat(document.getElementById("surd").value);
-  if (surd != null) {
+  if (!isNaN(surd)) {
     var temp = 0.5 * (approxim + surd/approxim);
     if (approxim == temp) {
       return;
