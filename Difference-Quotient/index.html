@@ -1,13 +1,30 @@
 <body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
   <title>Difference Quotient</title>
-  <input id="sinfunc" placeholder="f(x)=sin(x)" disabled></input>
+
+  Difference Quotient = <math xmlns="http://www.w3.org/1998/Math/MathML"><munder><mi>lim</mi><mrow><mo>&#x2206;</mo><mi>x</mi><mo>&#x2192;</mo><mn>0</mn></mrow></munder><mfrac><mstyle displaystyle="true"><mi>f</mi><mfenced><mrow><mi>x</mi><mo>+</mo><mo>&#x2206;</mo><mi>x</mi></mrow></mfenced><mo>-</mo><mi>f</mi><mfenced><mi>x</mi></mfenced></mstyle><mstyle displaystyle="true"><mo>&#x2206;</mo><mi>x</mi></mstyle></mfrac></math>
+
+  <br><br>
+  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+   <msup>
+    <mi>x</mi>
+    <mn>2</mn>
+   </msup>
+  </math>
   <input id="sinx" placeholder="x coord"></input>
   <button id="sinsubmit" onclick="calcSin()">Calculate</button>
   <output id="sinout"></output>
 
-  <br>
-
-  <input id="quadfunc" placeholder="f(x)=x^2" disabled></input>
+  <br><br>
+  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+   <mrow>
+    <mi>sin</mi>
+    <mo>&#8289;</mo>
+    <mo>(</mo>
+    <mi>x</mi>
+    <mo>)</mo>
+   </mrow>
+  </math>
   <input id="quadx" placeholder="x coord"></input>
   <button id="quadsubmit" onclick="calcX()">Calculate</button>
   <output id="quadout"></output>
