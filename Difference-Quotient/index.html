@@ -1,16 +1,26 @@
 <body>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
   <title>Difference Quotient</title>
-  Difference Quotient = <math xmlns="http://www.w3.org/1998/Math/MathML"><munder><mi>lim</mi><mrow><mo>&#x2206;</mo><mi>x</mi><mo>&#x2192;</mo><mn>0</mn></mrow></munder><mfrac><mstyle displaystyle="true"><mi>f</mi><mfenced><mrow><mi>x</mi><mo>+</mo><mo>&#x2206;</mo><mi>x</mi></mrow></mfenced><mo>-</mo><mi>f</mi><mfenced><mi>x</mi></mfenced></mstyle><mstyle displaystyle="true"><mo>&#x2206;</mo><mi>x</mi></mstyle></mfrac></math>
+  <h1>Difference Quotient</h1>
+  <h3>
+    This approximates instantaneous rate of change of these functions by letting dX := 0.000001.<br>
 
-  <br><br>
-  <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>sin</mi><mo>&#8289;</mo><mo>(</mo><mi>x</mi><mo>)</mo></math>
+    Newton's difference quotient is denoted by
+    <math><munder><mi>lim</mi><mrow><mo>&#x394;</mo><mi>x</mi><mo>&#x2192;</mo><mn>0</mn></mrow></munder><mfrac><mstyle displaystyle="true"><mi>f</mi><mfenced><mrow><mi>x</mi><mo>+</mo><mo>&#x394;</mo><mi>x</mi></mrow></mfenced><mo>-</mo><mi>f</mi><mfenced><mi>x</mi></mfenced></mstyle><mstyle displaystyle="true"><mo>&#x394;</mo><mi>x</mi></mstyle></mfrac></math>
+    however in this case does not<br>
+    require dX as it is only an approximation of these selected continuous functions. Hence, <br>
+    the program is simply calculating <math><mfrac><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>+</mo><mi>0.000001</mi><mo>)</mo><mo>-</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mi>0.000001</mi></mrow></mfrac></math>
+    thus explaining the decimal errors.
+    <br>
+  </h3>
+  <h4>There will not be an option to select your own function and compute for that as that would require parsing <br>of math and debugging which I am not very familiar with javascript. Since this is intended as a demonstration,<br> this program will suffice the intention</h4>
+  <math><mrow><mi>sin</mi><mo>&#8289;</mo><mo>(</mo><mi>x</mi><mo>)</mo></math>
   <input id="sinx" placeholder="x coord"></input>
   <button id="sinsubmit" onclick="calcSin()">Calculate</button>
   <output id="sinout"></output>
 
   <br><br>
-  <math xmlns='http://www.w3.org/1998/Math/MathML'></mrow><msup><mi>x</mi><mn>2</mn></msup></math>
+  <math></mrow><msup><mi>x</mi><mn>2</mn></msup></math>
   <input id="quadx" placeholder="x coord"></input>
   <button id="quadsubmit" onclick="calcX()">Calculate</button>
   <output id="quadout"></output>

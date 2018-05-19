@@ -1,0 +1,47 @@
+<body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+  <title>Integral Approximation</title>
+
+  <h1>Integral Approximation</h1>
+  <h3>
+    This approximates the area under the given function through two seperate techniques that are <br>
+    currently included. One of which is the Riemann Sum which approximates the area by the summation <br>
+    of rectangles and the other is trapezoidal rule which similarly, approximates via the summation <br>
+    of trapezoids under the curve.
+  </h3>
+
+  <h2>Riemann sum</h2>
+  <p>
+    =========================================================<br>
+    <b>Quick Summary</b>
+    <br>
+    Riemann Sum is basically creating rectangles under the function and summing the area to <br>
+    approximate the total area under the curve within the given domain. This method however <br>
+    consists of many variation. I.e. to reduce error bounds, it is possible to calculate <br>
+    a Riemann Sum of a function from left to right and vice versa. It can also be calculated <br>
+    by taking the area from the midpoints of every partition. Nonetheless, these errors <br>
+    could be minimized by increasing the quantity of partitions (which are the amounts <br>
+    of rectangles under the curve) and easily approximate the area under the curve. <br>
+    =========================================================
+    <br>
+    <b>Images</b><br>
+    <img></img><br>
+    =========================================================<br>
+  </p>
+
+
+
+  <h4>There will not be an option to select your own function and compute for that as that would require parsing <br>of math and debugging which I am not very familiar with javascript. Since this is intended as a demonstration,<br> this program will suffice the intention</h4>
+
+  <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>sin</mi><mo>&#8289;</mo><mo>(</mo><mi>x</mi><mo>)</mo></math>
+  <input id="sinx" placeholder="x coord"></input>
+  <button id="sinsubmit" onclick="calcSin()">Calculate</button>
+  <output id="sinout"></output>
+
+  <br><br>
+  <math xmlns='http://www.w3.org/1998/Math/MathML'></mrow><msup><mi>x</mi><mn>2</mn></msup></math>
+  <input id="quadx" placeholder="x coord"></input>
+  <button id="quadsubmit" onclick="calcX()">Calculate</button>
+  <output id="quadout"></output>
+  <script src="main.js"></script>
+</body>
